@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="720.0" prefWidth="1036.0" spacing="10.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sales.salesController">
+    <children>
+        <VBox spacing="15.0">
+            <children>
+                <Label fx:id="lblTT" prefHeight="17.0" prefWidth="0.0" text="0.00" />
+                <Label fx:id="lblCash" prefHeight="17.0" prefWidth="0.0" text="0.00" />
+            </children>
+        </VBox>
+        <Separator orientation="VERTICAL" prefHeight="647.0" prefWidth="6.0" />
+        <VBox alignment="CENTER" prefWidth="609.0" spacing="13.0">
+            <children>
+                <Label prefHeight="31.0" prefWidth="606.0" text="Company NAme" />
+                <Separator prefHeight="3.0" prefWidth="606.0" />
+                <HBox alignment="CENTER" fillHeight="false" prefHeight="49.0" prefWidth="609.0" spacing="10.0" VBox.vgrow="NEVER">
+                    <children>
+                        <TextField fx:id="txtBarCode" prefHeight="39.0" prefWidth="143.0" promptText="BARCODE">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </TextField>
+                        <Separator orientation="VERTICAL" prefHeight="39.0" prefWidth="6.0" />
+                        <Label fx:id="lblProdName" prefHeight="39.0" prefWidth="212.0" text="Prod Name" textFill="#5a00ff">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="txtQuantity" prefHeight="37.0" prefWidth="77.0" promptText="Quantity">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </TextField>
+                        <Separator orientation="VERTICAL" prefHeight="39.0" prefWidth="4.0" />
+                        <Label fx:id="lblPrice" alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="135.0" textFill="#fc00ff">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <Separator prefHeight="3.0" prefWidth="606.0" />
+                <TableView fx:id="table" prefHeight="254.0" prefWidth="604.0" />
+                <Separator prefWidth="200.0" />
+                <Label alignment="CENTER" prefHeight="23.0" prefWidth="604.0" text="AVAILABLE / iN STOCK">
+                    <font>
+                        <Font name="System Bold" size="40.0" />
+                    </font>
+                </Label>
+                <Separator prefWidth="200.0" />
+                <TableView fx:id="table_prods" prefHeight="127.0" prefWidth="604.0" />
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <TextField fx:id="txtSearch" prefHeight="39.0" prefWidth="178.0" promptText="SEARCHER" />
+                        <Separator orientation="VERTICAL" prefHeight="39.0" prefWidth="6.0" />
+                        <ComboBox fx:id="cbProds" prefHeight="39.0" prefWidth="252.0" />
+                        <Separator orientation="VERTICAL" prefHeight="39.0" prefWidth="6.0" />
+                        <Button fx:id="btAdd" mnemonicParsing="false" prefHeight="39.0" prefWidth="127.0" text="+ADD+" />
+                    </children>
+                </HBox>
+                <Separator prefWidth="200.0" />
+            </children>
+        </VBox>
+        <Separator orientation="VERTICAL" prefHeight="612.0" prefWidth="17.0" />
+        <VBox alignment="CENTER" prefHeight="547.0" prefWidth="306.0" spacing="12.0">
+            <children>
+                <HBox>
+                    <children>
+                        <Label prefHeight="31.0" prefWidth="153.0" text="Date" />
+                        <Label alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="153.0" text="Time" />
+                    </children>
+                </HBox>
+                <Separator prefHeight="3.0" prefWidth="304.0" />
+                <Button fx:id="btSave" mnemonicParsing="false" prefHeight="52.0" prefWidth="304.0" text="PURCHASE" />
+                <Separator prefHeight="3.0" prefWidth="304.0" />
+                <Button fx:id="btCancel" mnemonicParsing="false" prefHeight="52.0" prefWidth="304.0" text="CANCEL" />
+                <Button fx:id="btDel" mnemonicParsing="false" prefHeight="52.0" prefWidth="304.0" text="DELETE">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <Separator prefHeight="3.0" prefWidth="304.0" />
+                <Label fx:id="lblTtCost" prefHeight="52.0" prefWidth="304.0" text="Total :  200,000,000.00" textFill="RED">
+                    <font>
+                        <Font name="Microsoft Tai Le Bold" size="28.0" />
+                    </font>
+                </Label>
+                <Separator prefWidth="200.0" />
+                <TextField fx:id="txtCash" alignment="CENTER_RIGHT" prefHeight="11.0" prefWidth="306.0" promptText="CASH GIVEN">
+                    <font>
+                        <Font name="Century Schoolbook Bold" size="25.0" />
+                    </font>
+                </TextField>
+                <Separator prefWidth="200.0" />
+                <Label fx:id="lblCash" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="306.0" text="Cash : 0.00" textFill="#9e1f95" underline="true">
+                    <font>
+                        <Font name="David Bold" size="30.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Label>
+                <Separator prefWidth="200.0" />
+                <Label fx:id="lblBal" prefHeight="53.0" prefWidth="304.0" text="Change : 0.00" textFill="#1a00ff">
+                    <font>
+                        <Font name="System Bold" size="32.0" />
+                    </font>
+                </Label>
+                <Separator prefHeight="3.0" prefWidth="294.0" />
+                <Label prefHeight="39.0" prefWidth="304.0" text="Receipt S/no" />
+                <Separator prefWidth="200.0" />
+                <Button fx:id="btClear" mnemonicParsing="false" prefHeight="53.0" prefWidth="306.0" text="SWEEPER" />
+            </children>
+        </VBox>
+        <Separator orientation="VERTICAL" prefHeight="634.0" prefWidth="0.0" />
+        <Label fx:id="lblCashBal" prefHeight="17.0" prefWidth="0.0" text="0.00" />
+    </children>
+</HBox>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apMain" prefHeight="479.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginReg.loginRegCtrl">
+    <children>
+        <VBox layoutX="201.0" layoutY="114.0" prefHeight="114.0" prefWidth="192.0" spacing="10.0">
+            <children>
+                <Label prefHeight="25.0" prefWidth="199.0" text="User Name">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="cbUserName" prefHeight="25.0" prefWidth="199.0" promptText="Select User Name" />
+                <Label fx:id="lbIdCo" prefHeight="17.0" prefWidth="194.0" text="Label" />
+                <Label fx:id="lbFullNames" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="17.0" prefWidth="194.0" text="Label" />
+            </children>
+        </VBox>
+        <ComboBox fx:id="cbUserRank" layoutX="8.0" layoutY="58.0" prefHeight="34.0" prefWidth="177.0" />
+        <VBox layoutX="413.0" layoutY="114.0" spacing="10.0">
+            <children>
+                <ImageView fx:id="imgv" fitHeight="203.0" fitWidth="177.0" pickOnBounds="true" />
+                <Separator prefHeight="3.0" prefWidth="177.0" />
+                <Button fx:id="btReg" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" text="REGISTER" />
+                <Button fx:id="btUnReg" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" text="UNREGISTER" />
+                <Button fx:id="btPassChange" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" text="CHANGE PASSWORD" />
+                <Button fx:id="btPop" mnemonicParsing="false" prefHeight="25.0" prefWidth="177.0" text="POPULATE" />
+                <Separator prefHeight="3.0" prefWidth="177.0" />
+            </children>
+        </VBox>
+        <Label layoutX="8.0" layoutY="16.0" prefHeight="30.0" prefWidth="177.0" text="USER LEVEL">
+            <font>
+                <Font name="Century Schoolbook Bold" size="24.0" />
+            </font>
+        </Label>
+        <Separator layoutY="104.0" prefHeight="3.0" prefWidth="600.0" />
+        <Label layoutX="210.0" layoutY="13.0" prefHeight="35.0" prefWidth="379.0" text="SYSTEM ACCESS REGISTRATION">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Separator layoutX="400.0" layoutY="63.0" orientation="VERTICAL" prefHeight="34.0" prefWidth="6.0" />
+        <Separator layoutX="192.0" layoutY="17.0" orientation="VERTICAL" prefHeight="78.0" prefWidth="6.0" />
+        <Separator layoutX="200.0" layoutY="57.0" prefHeight="3.0" prefWidth="390.0" />
+        <Separator layoutX="400.0" layoutY="114.0" orientation="VERTICAL" prefHeight="359.0" prefWidth="6.0" />
+        <Separator layoutX="197.0" layoutY="245.0" prefWidth="200.0" />
+        <VBox layoutX="200.0" layoutY="258.0" prefHeight="211.0" prefWidth="192.0" spacing="10.0">
+            <children>
+                <Label prefHeight="17.0" prefWidth="192.0" text="Login Name e.g - slimsoft_tech" />
+                <TextField fx:id="txtLgName" prefHeight="25.0" prefWidth="192.0" />
+                <Label prefHeight="17.0" prefWidth="192.0" text="Login Password" />
+                <PasswordField fx:id="txtLgPass" prefHeight="25.0" prefWidth="192.0" />
+                <Label prefHeight="17.0" prefWidth="192.0" text="Confirm Login Password" />
+                <PasswordField fx:id="txtLgPassConfirm" prefHeight="25.0" prefWidth="192.0" />
+                <Label fx:id="lbMessage" prefHeight="30.0" prefWidth="192.0" text="message" />
+            </children>
+        </VBox>
+        <VBox layoutX="8.0" layoutY="114.0" spacing="10.0">
+            <children>
+                <TableView fx:id="table" prefHeight="202.0" prefWidth="177.0" />
+                <Separator prefHeight="3.0" prefWidth="177.0" />
+                <DatePicker fx:id="dpS" prefHeight="25.0" prefWidth="177.0" />
+                <DatePicker fx:id="dpE" prefHeight="25.0" prefWidth="177.0" />
+                <Separator prefHeight="3.0" prefWidth="177.0" />
+                <TextField fx:id="txtSearcher" alignment="CENTER" prefHeight="48.0" prefWidth="177.0" />
+                <Separator prefHeight="3.0" prefWidth="177.0" />
+            </children>
+        </VBox>
+        <Label fx:id="lbTime" layoutX="201.0" layoutY="67.0" prefHeight="25.0" prefWidth="80.0" text="23:34:67 HRS" textFill="#493bc6">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="lbDate" alignment="CENTER_RIGHT" layoutX="281.0" layoutY="67.0" prefHeight="25.0" prefWidth="110.0" text="24/24/2077" textFill="#f20000">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtIdCo" layoutX="413.0" layoutY="67.0" prefHeight="25.0" prefWidth="119.0" promptText="Enter Company Id">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </TextField>
+        <Button fx:id="btMap" layoutX="548.0" layoutY="67.0" mnemonicParsing="false" text="MAP" />
+        <Label fx:id="lbId" layoutX="580.0" layoutY="5.0" opacity="0.0" prefHeight="17.0" prefWidth="17.0" text="1" textFill="#493bc6">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

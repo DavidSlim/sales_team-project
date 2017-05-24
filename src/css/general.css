@@ -1,0 +1,147 @@
+.root{
+    -fx-background-color: darkgray;
+}
+.table-view{
+    -fx-base:white;
+    -fx-control-inner-background: lightslategray;
+    -fx-background-color: lightgrey;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color:transparent;
+    -fx-padding: 0;
+}
+.table-row-cell{
+    -fx-font-size: 14;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.colstyle.label{    
+    -fx-font: 12pt "Helvetica";
+    -fx-text-fill: red ;
+    -fx-alignment: CENTER_LEFT;
+}
+.table-row-cell:empty {
+    -fx-background-color: white;
+}
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 3px;
+}
+.separator.line{
+    -fx-border-style: solid;
+    -fx-border-color: green;
+    -fx-background-color: green;
+}
+
+/*
+
+.table-view.column-header.label{
+
+}
+
+.table-view.column-header,.table-view.filter{
+    -fx-size:5;
+    -fx-border-width: 1 0 1 0;
+    -fx-background-color: transparent;
+    -fx-border-insets: 1 0 1 0;
+}
+
+.table-view:focused.table-row-cell:filled:focused:selected{
+    -fx-background-color: black;
+    -fx-background-insets: 0,1,2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+.table-row-cell:filled:focused:selected {
+    -fx-background-color: red;
+    -fx-background-insets: 0,1,2;
+    -fx-background: -fx-accent;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+.table-view:row-selection.table-row-cell:filled:hover{
+    -fx-background-color: green;
+    -fx-background-insets: 0, 0010;
+    -fx-text-fill: -fx-text-inner-color;
+}
+.table-view:focused.table-row-cell:filled:focused:selected:hover{
+    -fx-background-color: orange;
+    -fx-background-insets: 0, 0 0 1 0,1 1 2 1,2 2 3 2,3 3 4 3;
+    -fx-text-fill: -fx-text-inner-color;
+}
+.table-view:row-selection.table-row-cell:filled:focused:hover{
+    -fx-background-color: green;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+
+.label{
+    -fx-font: 14px "Segoe UI Bold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+.label-bright{
+    -fx-font: 14px "Segoe UI Bold";
+    -fx-text-fill: white;
+    -fx-opacity: 0;  
+}
+.label-header{
+    -fx-font: 32px "Segoe UI Bold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;  
+}*/
+
+
+
+
+.button1{-fx-font: 40px "Segoe UI Bold";
+         -fx-text-fill: khaki;
+         -fx-alignment: CENTER_RIGHT;
+         -fx-padding: 0;
+         -fx-background-color: radial-gradient(center 50% 50%,radius 170%,yellowgreen 80%, purple 20%);
+         -fx-opacity: 90;
+}
+.button{    
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: burlywood;
+    -fx-border-color: white,green;
+    -fx-border-width: 4,4;
+    -fx-background-radius: 2,0;
+    -fx-border-insets: 1 0 1 0,0;
+    -fx-font:14pt "Helvetica";
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}.button:hover{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: darkgray;
+    -fx-text-fill: yellow;
+    -fx-alignment: CENTER_LEFT;
+    -fx-effect: dropshadow(two-pass-box, gold,8,0.0,2,0);
+}.button:pressed.button:default:hover:pressed{
+    -fx-background-color: white;
+    -fx-text-fill: red;
+}.button:focused{
+    -fx-border-radius: 10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: lightcoral;
+    -fx-border-color: white,green;
+    -fx-border-width: 4,4;
+    -fx-alignment: CENTER_RIGHT;
+    -fx-background-radius: 0,2;
+    -fx-border-insets: 0 5 0 5,0;
+    -fx-font: 18pt "Courier New";  -fx-font-weight: bold;
+}.button:disabled,.button:default:disabled{
+    -fx-opacity: 0.0;
+    -fx-background-color: blue;
+    -fx-text-fill: wheat;
+}.button:default{
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: red;
+}
+.button:default:hover{
+    -fx-background-color: derive(-fx-focus-color, 30%);
+}
+
+
+

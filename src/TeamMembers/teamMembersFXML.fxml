@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<HBox xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TeamMembers.teamMembersController">
+    <children>
+        <Pane fx:id="ppMain" prefHeight="656.0" prefWidth="969.0">
+            <children>
+                <Separator layoutX="179.0" orientation="VERTICAL" prefHeight="632.0" prefWidth="6.0" />
+                <GridPane fx:id="gpMain" layoutX="205.0" layoutY="82.0" prefHeight="347.0" prefWidth="735.0" vgap="5.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Separator prefHeight="5.0" prefWidth="735.0" />
+                                <HBox prefHeight="26.0" prefWidth="0.0">
+                                    <children>
+                                        <Label fx:id="lblTime" alignment="CENTER" prefHeight="26.0" prefWidth="195.0" text="Label" textFill="#0c488d">
+                                            <font>
+                                                <Font name="Shonar Bangla" size="25.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="lblDate" alignment="CENTER" prefHeight="47.0" prefWidth="234.0" text="12/12/2016" textFill="#792180" />
+                                        <Label alignment="CENTER" prefHeight="26.0" prefWidth="309.0" textFill="#792180" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <GridPane hgap="20.0" prefHeight="299.0" prefWidth="697.0" GridPane.rowIndex="1">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="15.0" minWidth="0.0" prefWidth="7.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="273.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <GridPane hgap="15.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="252.0" minWidth="10.0" prefWidth="205.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="195.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Label text="Id No" />
+                                        <TextField fx:id="txtIdNo" prefHeight="17.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                                        <Label text="Sir Name" GridPane.rowIndex="2" />
+                                        <TextField fx:id="txtSirName" prefHeight="17.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                                        <Label text="Other Names" GridPane.rowIndex="4" />
+                                        <TextField fx:id="txtOtherName" prefHeight="17.0" prefWidth="200.0" GridPane.rowIndex="5" />
+                                        <Label text="Date Of Birth" GridPane.rowIndex="7" />
+                                        <HBox prefHeight="25.0" prefWidth="200.0" spacing="5.0" GridPane.rowIndex="8">
+                                            <children>
+                                                <ComboBox fx:id="cbDOb" prefHeight="25.0" prefWidth="55.0" />
+                                                <ComboBox fx:id="cbMOb" prefHeight="25.0" prefWidth="65.0" />
+                                                <ComboBox fx:id="cbYOb" prefHeight="25.0" prefWidth="75.0" />
+                                            </children>
+                                        </HBox>
+                                        <Label text="Route Plan" GridPane.rowIndex="9" />
+                                        <ComboBox fx:id="cbRoutePlan" prefHeight="25.0" prefWidth="236.0" GridPane.rowIndex="10" />
+                                        <Label text="Assigned To" GridPane.columnIndex="1" />
+                                        <ComboBox fx:id="cbAssignedTo" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <Label text="Pin No" GridPane.rowIndex="11" />
+                                        <TextField fx:id="txtPinNo" prefHeight="17.0" prefWidth="200.0" GridPane.rowIndex="12" />
+                                        <Label text="Phone No" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                        <TextField fx:id="txtPhoneNo" prefHeight="17.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                        <Label text="Email Address" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                        <TextField fx:id="txtEmailAdd" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                        <Label text="Website" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                                        <TextField fx:id="txtWebsite" prefHeight="17.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                                        <Label text="Bank" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                        <TextField fx:id="txtBank" prefHeight="17.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                        <Label text="AC No" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                        <TextField fx:id="txtAcNo" prefHeight="17.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    </children>
+                                </GridPane>
+                                <VBox alignment="CENTER" prefHeight="299.0" prefWidth="247.0" GridPane.columnIndex="2">
+                                    <children>
+                                        <Label fx:id="lblAutoCode" alignment="CENTER" prefHeight="26.0" prefWidth="253.0" text="LABEL">
+                                            <font>
+                                                <Font name="Goudy Old Style Bold" size="29.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fx:id="imgView" fitHeight="240.0" fitWidth="245.0" pickOnBounds="true" />
+                                        <Button fx:id="btImgPicker" mnemonicParsing="false" prefHeight="22.0" prefWidth="250.0" text="Button" />
+                                    </children>
+                                    <padding>
+                                        <Insets left="10.0" right="10.0" />
+                                    </padding>
+                                </VBox>
+                                <Separator orientation="VERTICAL" prefHeight="272.0" prefWidth="0.0" GridPane.columnIndex="1" />
+                            </children>
+                        </GridPane>
+                    </children>
+                </GridPane>
+                <ListView fx:id="listView" layoutX="7.0" layoutY="161.0" prefHeight="240.0" prefWidth="164.0" />
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="14.0" prefHeight="28.0" prefWidth="172.0" text="USER LEVEL">
+                    <font>
+                        <Font name="Serif Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="420.0" prefHeight="45.0" prefWidth="164.0" text="SEARCHER">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="183.0" layoutY="2.0" orientation="VERTICAL" prefHeight="632.0" prefWidth="7.0" />
+                <DatePicker fx:id="dpStart" layoutX="7.0" layoutY="481.0" prefHeight="25.0" prefWidth="164.0" promptText="Start Date" />
+                <DatePicker fx:id="dpEnd" layoutX="8.0" layoutY="524.0" prefHeight="25.0" prefWidth="164.0" promptText="End Date" />
+                <TextField fx:id="txtSearcher" alignment="CENTER" layoutX="7.0" layoutY="603.0" prefHeight="35.0" prefWidth="164.0" promptText="SEARCHER">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <Separator layoutX="87.0" layoutY="558.0" orientation="VERTICAL" prefHeight="35.0" prefWidth="7.0" />
+                <Separator layoutX="205.0" layoutY="453.0" prefHeight="3.0" prefWidth="735.0" />
+                <Separator layoutX="7.0" layoutY="462.0" prefHeight="3.0" prefWidth="164.0" />
+                <Separator layoutX="10.0" layoutY="419.0" prefHeight="3.0" prefWidth="164.0" />
+                <Button fx:id="btClear" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="104.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="164.0" text="CLEAR" />
+                <Separator layoutY="148.0" prefHeight="3.0" prefWidth="172.0" />
+                <Separator layoutX="3.0" layoutY="92.0" prefHeight="3.0" prefWidth="172.0" />
+                <ComboBox fx:id="cbUserRank" layoutX="9.0" layoutY="54.0" prefHeight="35.0" prefWidth="164.0" />
+                <Separator layoutX="481.0" layoutY="3.0" orientation="VERTICAL" prefHeight="81.0" prefWidth="7.0" />
+                <Label alignment="CENTER" layoutX="504.0" layoutY="17.0" prefHeight="62.0" prefWidth="443.0" text="TEAM MEMBERS REGISTRATION" textFill="#136b07">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lblIdd" layoutX="912.0" layoutY="71.0" />
+                <HBox alignment="CENTER" layoutX="205.0" layoutY="467.0" prefHeight="49.0" prefWidth="735.0" spacing="20.0">
+                    <children>
+                        <Separator orientation="VERTICAL" prefHeight="73.0" prefWidth="7.0" />
+                        <Button fx:id="btDel" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="90.0" text="DELETE" />
+                        <Button fx:id="btAdd" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="90.0" text="TABLE ADD" />
+                        <Button fx:id="btSave" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="111.0" text="SAVE" />
+                        <Button fx:id="btUpdate" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="90.0" text="UPDATE" />
+                        <Button fx:id="btPopulate" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefWidth="90.0" text="POPULATE" />
+                        <Separator orientation="VERTICAL" prefHeight="73.0" prefWidth="6.0" />
+                    </children>
+                </HBox>
+                <TableView fx:id="table" layoutX="205.0" layoutY="529.0" prefHeight="117.0" prefWidth="735.0" />
+            </children>
+        </Pane>
+    </children>
+</HBox>

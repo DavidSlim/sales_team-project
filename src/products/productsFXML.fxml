@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="hbmain" alignment="CENTER" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="products.productsController">
+    <children>
+        <SplitPane dividerPositions="0.12893982808022922" orientation="VERTICAL" prefHeight="700.0" prefWidth="600.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <Label fx:id="lblDate" layoutY="6.0" prefHeight="17.0" prefWidth="6.0" />
+                        <Label fx:id="lblTtItems" layoutX="14.0" layoutY="51.0" prefHeight="31.0" prefWidth="149.0" text="ll" textFill="RED">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <SplitPane dividerPositions="0.28523489932885904" layoutX="229.0" layoutY="214.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="605.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="603.0" prefWidth="176.0">
+                                    <children>
+                                        <TextField fx:id="txtSearcher" layoutX="9.0" layoutY="539.0" prefHeight="50.0" prefWidth="149.0" promptText="SEARCHER">
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                        </TextField>
+                                        <DatePicker fx:id="dpEnd" layoutX="9.0" layoutY="494.0" prefHeight="25.0" prefWidth="149.0" promptText="End Date" />
+                                        <DatePicker fx:id="dpStart" layoutX="9.0" layoutY="443.0" prefHeight="25.0" prefWidth="149.0" promptText="Start Date" />
+                                        <Separator layoutX="6.0" layoutY="481.0" prefHeight="3.0" prefWidth="156.0" />
+                                        <Separator layoutX="6.0" layoutY="528.0" prefHeight="3.0" prefWidth="156.0" />
+                                        <Separator layoutX="81.0" layoutY="475.0" orientation="VERTICAL" prefHeight="17.0" prefWidth="6.0" />
+                                        <Separator layoutX="6.0" layoutY="424.0" prefHeight="3.0" prefWidth="156.0" />
+                                        <Label alignment="CENTER" layoutX="1.0" layoutY="376.0" prefHeight="39.0" prefWidth="167.0" text="SEARCHERS" textFill="#941515">
+                                            <font>
+                                                <Font name="Tw Cen MT Condensed Extra Bold" size="35.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="lblDate1" layoutX="6.0" layoutY="416.0" prefHeight="17.0" prefWidth="6.0" />
+                                        <Label fx:id="lblDate2" layoutX="147.0" layoutY="416.0" prefHeight="17.0" prefWidth="6.0" />
+                                        <ListView fx:id="listView" layoutX="-6.0" layoutY="82.0" maxHeight="270.0" maxWidth="174.0" prefHeight="270.0" prefWidth="174.0" />
+                                        <Separator layoutX="6.0" layoutY="365.0" prefHeight="3.0" prefWidth="156.0" />
+                                        <Separator layoutX="-4.0" layoutY="68.0" prefHeight="3.0" prefWidth="174.0" />
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="603.0" prefWidth="411.0">
+                                    <children>
+                                        <AnchorPane layoutX="5.0" layoutY="18.0" maxHeight="571.0" maxWidth="413.0" prefHeight="571.0" prefWidth="413.0">
+                                            <children>
+                                                <DatePicker fx:id="dpF" layoutX="237.0" prefHeight="31.0" prefWidth="174.0" promptText="Date Product Registered" />
+                                                <GridPane layoutX="12.0" layoutY="67.0" prefHeight="232.0" prefWidth="390.0">
+                                                    <columnConstraints>
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="134.0" />
+                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="256.0" />
+                                                    </columnConstraints>
+                                                    <rowConstraints>
+                                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                                    </rowConstraints>
+                                                    <children>
+                                                        <Label fx:id="lblProdPrice" contentDisplay="CENTER" prefHeight="30.0" prefWidth="159.0" textFill="RED">
+                                                            <font>
+                                                                <Font name="System Bold" size="18.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <Label prefHeight="17.0" prefWidth="87.0" text="Bar Code No" GridPane.rowIndex="2" />
+                                                        <Label prefHeight="17.0" prefWidth="87.0" text="Product Name" GridPane.rowIndex="3" />
+                                                        <Label prefHeight="9.0" prefWidth="71.0" text="Product Price" GridPane.rowIndex="5" />
+                                                        <Label fx:id="lblAc" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="267.0" textAlignment="CENTER" textFill="#4400ff" GridPane.columnIndex="1">
+                                                            <font>
+                                                                <Font name="System Bold" size="16.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <TextField fx:id="txtBC" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                        <TextField fx:id="txtProdName" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                        <TextField fx:id="txtProdDesc" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                        <TextField fx:id="txtProdPrice" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                        <Label prefHeight="6.0" prefWidth="105.0" text="Product Description" GridPane.rowIndex="4" />
+                                                    </children>
+                                                </GridPane>
+                                                <TableView fx:id="table" layoutY="451.0" prefHeight="120.0" prefWidth="413.0" />
+                                                <Separator layoutX="12.0" layoutY="49.0" prefHeight="2.0" prefWidth="390.0" />
+                                                <Separator layoutX="3.0" layoutY="311.0" prefHeight="17.0" prefWidth="403.0" />
+                                                <HBox layoutX="12.0" layoutY="335.0" prefHeight="87.0" prefWidth="398.0">
+                                                    <children>
+                                                        <HBox alignment="CENTER" prefHeight="73.0" prefWidth="398.0">
+                                                            <children>
+                                                                <Button fx:id="btPop" alignment="CENTER" contentDisplay="CENTER" maxWidth="80.0" mnemonicParsing="false" prefWidth="80.0" text="POP">
+                                                                    <font>
+                                                                        <Font name="System Bold" size="15.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                    </HBox.margin>
+                                                                </Button>
+                                                                <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                                                <Button fx:id="btSave" alignment="CENTER" contentDisplay="CENTER" maxWidth="80.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="SAVE">
+                                                                    <font>
+                                                                        <Font name="System Bold" size="15.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                    </HBox.margin>
+                                                                </Button>
+                                                                <Button fx:id="btDel" alignment="CENTER" contentDisplay="CENTER" maxWidth="80.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" text="DELETE">
+                                                                    <font>
+                                                                        <Font name="System Bold" size="15.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                    </HBox.margin>
+                                                                </Button>
+                                                                <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                                                <Button fx:id="btUpdate" alignment="CENTER" contentDisplay="CENTER" maxWidth="80.0" mnemonicParsing="false" prefWidth="80.0" text="EDIT">
+                                                                    <font>
+                                                                        <Font name="System Bold" size="15.0" />
+                                                                    </font>
+                                                                    <HBox.margin>
+                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                    </HBox.margin>
+                                                                </Button>
+                                                            </children>
+                                                        </HBox>
+                                                    </children>
+                                                </HBox>
+                                                <Separator layoutX="8.0" layoutY="436.0" prefHeight="3.0" prefWidth="390.0" />
+                                                <Button fx:id="btClr" layoutX="12.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="105.0" text="CLEANER">
+                                                    <font>
+                                                        <Font name="Eras Bold ITC" size="13.0" />
+                                                    </font>
+                                                </Button>
+                                                <Label fx:id="lblId" layoutX="225.0" prefHeight="31.0" prefWidth="6.0" textFill="WHITE" />
+                                                <Label fx:id="lblTime" alignment="CENTER" contentDisplay="CENTER" layoutX="123.0" prefHeight="31.0" prefWidth="105.0" textFill="#0c488d">
+                                                    <font>
+                                                        <Font name="Shonar Bangla Bold" size="20.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </AnchorPane>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</HBox>

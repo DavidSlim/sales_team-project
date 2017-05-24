@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RoutePlans.RoutePlansController">
+    <children>
+        <GridPane hgap="20.0" layoutX="198.0" layoutY="172.0" prefHeight="144.0" prefWidth="416.0" vgap="10.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Country" />
+                <TextField fx:id="txtCountry" maxHeight="40.0" maxWidth="200.0" prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                <Label text="Region" GridPane.rowIndex="2" />
+                <TextField fx:id="txtRegion" maxHeight="40.0" maxWidth="200.0" prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="3" />
+                <Label text="County" GridPane.columnIndex="1" />
+                <TextField fx:id="txtCounty" maxHeight="40.0" maxWidth="200.0" prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label text="Location" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="txtLocation" maxHeight="40.0" maxWidth="200.0" prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+        <Separator layoutX="-8.0" layoutY="88.0" prefHeight="0.0" prefWidth="643.0" />
+        <Separator layoutX="176.0" layoutY="87.0" orientation="VERTICAL" prefHeight="489.0" prefWidth="6.0" />
+        <ListView fx:id="listView" layoutX="14.0" layoutY="117.0" maxWidth="150.0" prefHeight="254.0" prefWidth="150.0" />
+        <TableView fx:id="table" layoutX="198.0" layoutY="440.0" prefHeight="113.0" prefWidth="416.0" />
+        <DatePicker fx:id="dpStart" layoutX="14.0" layoutY="407.0" prefHeight="25.0" prefWidth="149.0" promptText="Search Start Date" />
+        <DatePicker fx:id="dpEnd" layoutX="14.0" layoutY="460.0" prefHeight="25.0" prefWidth="149.0" promptText="Search End Date" />
+        <TextField fx:id="txtSearcher" alignment="CENTER" layoutX="14.0" layoutY="506.0" prefHeight="45.0" prefWidth="149.0" promptText="SEARCHER">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </TextField>
+        <HBox alignment="CENTER" layoutX="198.0" layoutY="351.0" nodeOrientation="LEFT_TO_RIGHT" spacing="10.0">
+            <children>
+                <Button fx:id="btPop" maxWidth="70.0" mnemonicParsing="false" prefWidth="70.0" text="POP" />
+                <Button fx:id="btClear" maxWidth="70.0" mnemonicParsing="false" prefWidth="70.0" text="CLEAR" />
+                <Button fx:id="btSave" mnemonicParsing="false" prefHeight="40.0" prefWidth="96.0" text="SAVE" />
+                <Button fx:id="btDelete" maxWidth="70.0" mnemonicParsing="false" prefWidth="70.0" text="DELETE" />
+                <Button fx:id="btUpdate" maxWidth="70.0" mnemonicParsing="false" prefWidth="70.0" text="UPDATE" />
+            </children>
+        </HBox>
+        <Separator layoutX="198.0" layoutY="332.0" prefHeight="3.0" prefWidth="416.0" />
+        <Separator layoutX="198.0" layoutY="406.0" prefHeight="3.0" prefWidth="416.0" />
+        <Separator layoutX="403.0" layoutY="397.0" orientation="VERTICAL" prefHeight="45.0" prefWidth="6.0" />
+        <Separator layoutX="198.0" layoutY="152.0" prefHeight="3.0" prefWidth="416.0" />
+        <Separator layoutX="14.0" layoutY="494.0" prefHeight="3.0" prefWidth="149.0" />
+        <Separator layoutX="14.0" layoutY="448.0" prefHeight="3.0" prefWidth="149.0" />
+        <Separator layoutX="14.0" layoutY="390.0" prefHeight="3.0" prefWidth="149.0" />
+        <Separator layoutX="86.0" layoutY="382.0" orientation="VERTICAL" prefHeight="17.0" prefWidth="6.0" />
+        <Separator layoutX="86.0" layoutY="440.0" orientation="VERTICAL" prefHeight="17.0" prefWidth="6.0" />
+        <Separator layoutX="86.0" layoutY="487.0" orientation="VERTICAL" prefHeight="17.0" prefWidth="6.0" />
+        <Separator layoutX="14.0" layoutY="101.0" prefHeight="3.0" prefWidth="149.0" />
+        <Separator layoutX="86.0" layoutY="93.0" orientation="VERTICAL" prefHeight="17.0" prefWidth="6.0" />
+        <Separator layoutX="176.0" layoutY="8.0" orientation="VERTICAL" prefHeight="73.0" prefWidth="6.0" />
+        <Label layoutX="326.0" layoutY="8.0" prefHeight="73.0" prefWidth="292.0" text="ROUTE PLANS" textFill="#4c095e">
+            <font>
+                <Font name="System Bold" size="42.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblLocation" alignment="CENTER_RIGHT" layoutX="198.0" layoutY="101.0" prefHeight="40.0" prefWidth="416.0" textFill="#199a5e">
+            <font>
+                <Font name="Lucida Bright Demibold" size="27.0" />
+            </font>
+        </Label>
+        <Separator layoutX="311.0" layoutY="8.0" orientation="VERTICAL" prefHeight="73.0" prefWidth="6.0" />
+        <Label fx:id="lblTime" layoutX="184.0" layoutY="8.0" prefHeight="25.0" prefWidth="121.0" textFill="#e80000">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblDate" layoutX="184.0" layoutY="56.0" prefHeight="25.0" prefWidth="121.0" textFill="#3141bf">
+            <font>
+                <Font name="Arial Black" size="13.0" />
+            </font>
+        </Label>
+        <Separator layoutX="184.0" layoutY="43.0" prefHeight="3.0" prefWidth="121.0" />
+        <ComboBox fx:id="cbDashBoard" layoutX="14.0" layoutY="21.0" maxHeight="45.0" maxWidth="150.0" prefHeight="45.0" prefWidth="150.0" AnchorPane.leftAnchor="14.0" />
+        <Button fx:id="btAdd" layoutX="259.0" layoutY="407.0" mnemonicParsing="false" prefHeight="3.0" prefWidth="52.0" text="add" />
+        <Label fx:id="lblId" layoutX="586.0" layoutY="411.0" prefHeight="17.0" prefWidth="6.0" />
+    </children>
+</AnchorPane>
